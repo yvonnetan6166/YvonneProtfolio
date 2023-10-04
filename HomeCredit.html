@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a  class="logo">Projects</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						
+						<ul class="icons">
+							<li><a href="index.html" class="icon solid fa-home"><span class="label">Home</span></a></li>
+							<li><a href="https://www.linkedin.com/in/yvonnetan6166/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/yvonnetan6166" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="mailto:yvonnetan6166@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+								</header>
+									<h1>Home Credit Default Risk</h1>
+									<header>
+										<a class="image fit"><img src="images/credit pic/6.png" alt="" /></a>
+
+									</header>
+											<header>
+											<h3>Overview</h3>
+											<p>Home Credit strives to broaden financial inclusion for the unbanked population by providing a positive and safe borrowing experience. In order to make sure this underserved population has a positive loan experience, Home Credit makes use of a variety of alternative data--including telco and transactional information--to predict their clients' repayment abilities.
+									<p>While Home Credit is currently using various statistical and machine learning methods to make these predictions, they're challenging Kagglers to help them unlock the full potential of their data. Doing so will ensure that clients capable of repayment are not rejected and that loans are given with a principal, maturity, and repayment calendar that will empower their clients to be successful.</p>
+								</header>
+								<header>
+									<h3>Goal and Objectives</h3>
+									<p>Build a data model to have maximum area under the ROC curve between the predicted probability and the observed target. The more the area enclosed by the ROC curve, the better it is. The area under the curve can lie between 0 and 1. The closer it is to 1, the better it is.</header>
+								</header>
+								<header>
+									<h3>KPIs Architecture</h3>
+									<p>ROC analysis provides tools to select possibly optimal models and to discard suboptimal ones independently from (and prior to specifying) the cost context or the class distribution. ROC analysis is related in a direct and natural way to cost/benefit analysis of diagnostic decision making.
+								</header>
+							</p>
+								<header>
+									<h3>Data Tables</h3>
+                                      <h5>application_{train|test}.csv</h5>
+                                         <li>This is the main table, broken into two files for Train (with TARGET) and Test (without TARGET).</li>
+                                	     <li>Static data for all applications. One row represents one loan in our data sample.</li>
+                                      <h5>bureau.csv</h5>
+                                    <li>All client's previous credits provided by other financial institutions that were reported to Credit Bureau (for clients who have a loan in our sample).</li>
+                                	<li>For every loan in our sample, there are as many rows as number of credits the client had in Credit Bureau before the application date.</li>
+                                    <h5>bureau_balance.csv</h5>
+                                    <li>Monthly balances of previous credits in Credit Bureau.</li>
+                                	<li>This table has one row for each month of history of every previous credit reported to Credit Bureau – i.e the table has (#loans in sample * # of relative previous credits * # of months where we have some history observable for the previous credits) rows.</li>
+                                    <h5>POS_CASH_balance.csv</h5>
+                                    <li>Monthly balance snapshots of previous POS (point of sales) and cash loans that the applicant had with Home Credit.</li>
+                                	<li>This table has one row for each month of history of every previous credit in Home Credit (consumer credit and cash loans) related to loans in our sample – i.e. the table has (#loans in sample * # of relative previous credits * # of months in which we have some history observable for the previous credits) rows.</li>                              
+                               
+                                    <h5>credit_card_balance.csv</h5>
+                                    <li>Monthly balance snapshots of previous credit cards that the applicant has with Home Credit.</li>
+                                	<li>This table has one row for each month of history of every previous credit in Home Credit (consumer credit and cash loans) related to loans in our sample – i.e. the table has (#loans in sample * # of relative previous credit cards * # of months where we have some history observable for the previous credit card) rows.</li>
+                                    <h5>previous_application.csv</h5>
+                                    <li>Repayment history for the previously disbursed credits in Home Credit related to the loans in our sample.</li>
+                                	<li>There is a. one row for every payment that was made plus b. one row each for missed payment.</li>
+                                    <li>One row is equivalent to one payment of one installment OR one installment corresponding to one payment of one previous Home Credit credit related to loans in our sample.</li> 
+                                    <h5>HomeCredit_columns_description.csv</h5>
+                                    <li>This file contains descriptions for the columns in the various data files.</li>
+                                	<a class="image fit"><img src="images/credit pic/2.png" alt="" /></a>                             
+                                </header>
+							</p>
+								<header>
+									<h3>Code Snippets</h3>
+									<a class="image fit"><img src="images/credit pic/3.png" alt="" /></a>
+								</header>
+
+                                <header>
+									<h3>Conclusion</h3>
+									<a class="image fit"><img src="images/credit pic/4.png" alt="" /></a>
+                                    <a class="image fit"><img src="images/credit pic/5.png" alt="" /></a>
+                                    <p>AUROC (Area Under the Receiver Operating Characteristics) The more the area enclosed by the ROC curve, the better it is. The area under the curve can lie between 0 and 1. The closer it is to 1, the better it is. Thus, Random Forest Model performs much better than Logistic Regression Model.</p>
+                                </header>
+								
+							</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+									<ul class="icons alt">
+										<li><a href="index.html" class="icon solid fa-home"><span class="label">Home</span></a></li>
+										<li><a href="https://www.linkedin.com/in/yvonnetan6166/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+										<li><a href="https://github.com/yvonnetan6166" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="mailto:yvonnetan6166@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
